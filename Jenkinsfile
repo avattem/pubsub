@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'maven-6.6-jdk-8'
+      args 'cujh m'
     }
     
   }
@@ -22,7 +23,7 @@ pipeline {
         echo 'hiiii '
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sleep 8
       }
